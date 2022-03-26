@@ -11,12 +11,13 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 // connect db
-mongoose.connect(process.env.DB_CONNECT,
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-  },
-  () => console.log('connected to mongoose'),
+mongoose.connect(
+    process.env.DB_CONNECT,
+    {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+    },
+    () => console.log('connected to mongoose')
 );
 
 app.use(express.json());
@@ -31,7 +32,7 @@ app.use('/api/vote', voteRoute);
 app.use(express.static(path.join(__dirname, '../client/build')));
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
+    res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
 });
 //*/
 
