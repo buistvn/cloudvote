@@ -1,80 +1,62 @@
-Important --  do not merge your local branch into the master
-branch without submitting a pull request for the users of 
-group to review. This will ensure that the code works and
-is to each members standards.
+<!-- PROJECT -->
+# CLOUDVOTE
 
------------------------------------------------------------
+![Project Screenshot][project-screenshot]
 
-Create a voting app.
-
-The app will be able to allow a pool of registered 
-users the ability to vote on a subject.Voting would 
-then be cut-off at a specific time.
+CLOUDVOTE is a web app for voting on topics. When the app starts, users will have the option to log in or register for an account. They can fill out a form to propose a topic which is posted for a certain amount of time. During that time period, other users can vote on that proposal. After the time period expires, voting for that proposal is disabled and all of the votes are tallied up and displayed.
 
 
-1) authentication
-	
-		- JWT and crypto.
-    - follow: https://expressjs.com/en/advanced/best-practice-security.html
+
+<!-- TECHNOLOGIES -->
+## Technologies
+
+* [React](https://reactjs.org/)
+* [React Router](https://reactrouter.com/)
+* [Express](https://expressjs.com/)
+* [Mongoose](https://mongoosejs.com/)
+* [JSON Web Token](https://github.com/auth0/node-jsonwebtoken)
 
 
-2) database for logging voters, votes, and subjects
 
-		- the voters and their votes.
-		- the subject being voted on and the voters 
-			who participated.
-		
-	The subject table/model will tally the votes 
-	based on the relation between table 
-	and votes.
+<!-- INSTALLATION -->
+## Installation
 
-	When voting is complete, the votes will be 
-	displayed, along with each voter in their
-	corresponding vote column.
+To set up a local copy of the project, follow these steps.
 
-
-3) design
-	
-		- users should only come here to do one 
-			thing, vote.
-		- a form is really all that is needed
-		- a description of the topic will be given
-			after authentication.
-
------------------------------------------------------------
-
-It will be important to not push to the master branch until 
-the code has been reviewed by everyone in the group to make 
-sure that it works. To make a branch on your local machine, 
-use the git branch and git checkout commands. If you need 
-help, just ask.
-
------------------------------------------------------------
+1. Clone the repository
+   ```sh
+   git clone https://github.com/buistvn/cloudvote
+   ```
+2. Install packages
+   ```sh
+   npm install
+   ```
 
 
-to run the application:
 
-  Install the dependencies in the final and server 
-  directories. Check the package.json files
-  accordingly. Install the nodemon package as a 
-  dev dependency using " npm install --save-dev "
-  instead of just " --save "
+<!-- USAGE -->
+## Usage
 
-  Then ...
+To run the project, follow these steps.
 
-  To test production:
-
-    change to final/client directory and run:
-    
-      npm run build
+1. Run the development server
+   ```sh
+   npm start
+   ```
+2. Open http://localhost:3000 in your browser
 
 
-  Once complete:
 
-    Change to the server directory and run:
-  
-      npm run dev
+<!-- AUTHORS -->
+## Authors
+
+CS 290 Final Project Team 5
+
+* [Steven Bui](https://github.com/buistvn)
+* [Alvin Johns](https://github.com/endepointe)
+* [Simon Millsap](https://github.com/Simon-ster)
 
 
-apis will be tested with Postman.
 
+<!-- LINKS & IMAGES -->
+[project-screenshot]: /docs/cloudvote.png
