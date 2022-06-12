@@ -26,7 +26,7 @@ To set up a local copy of the project, follow these steps.
 
 1. Clone the repository
    ```sh
-   git clone https://github.com/buistvn/cloudvote
+   git clone https://github.com/buistvn/cloudvote.git
    ```
 2. Install packages
    ```sh
