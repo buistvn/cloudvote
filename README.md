@@ -3,7 +3,7 @@
 
 ![Project Screenshot][project-screenshot]
 
-CLOUDVOTE is a web app for voting on topics. When the app starts, users will have the option to log in or register for an account. They can fill out a form to propose a topic which is posted for a certain amount of time. During that time period, other users can vote on that proposal. After the time period expires, voting for that proposal is disabled and all of the votes are tallied up and displayed.
+CLOUDVOTE is a web app for voting on topics. At the beginning, users will have the option to log in or register for an account. After authentication is successful, they can fill out a form to propose a topic which is posted for a certain amount of time. During that time period, other users can vote on that proposal. When the time period expires, voting for that proposal is disabled and all of the votes are tallied up and displayed.
 
 
 
@@ -11,10 +11,11 @@ CLOUDVOTE is a web app for voting on topics. When the app starts, users will hav
 ## Technologies
 
 * [React](https://reactjs.org/)
-* [React Router](https://reactrouter.com/)
 * [Express](https://expressjs.com/)
+* [MongoDB](https://www.mongodb.com/)
+* [React Router](https://reactrouter.com/)
 * [Mongoose](https://mongoosejs.com/)
-* [JSON Web Token](https://github.com/auth0/node-jsonwebtoken)
+* [JSON Web Token](https://jwt.io/)
 
 
 
